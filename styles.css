@@ -63,6 +63,39 @@ body {
     margin-bottom: 2.5rem;
     opacity: 0.9;
     line-height: 1.8;
+    text-align: left;
+}
+
+.hero-text {
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.hero-text:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.hero-text.highlight {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid rgba(255, 255, 255, 0.5);
+    margin: 1.5rem 0;
+    font-weight: 500;
+}
+
+.hero-brand {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.hero-brand strong {
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .cta-button {
@@ -126,6 +159,40 @@ section {
     margin-bottom: 0;
 }
 
+.about-brand,
+.about-eshop {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.about-brand h3,
+.about-eshop h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.about-brand p,
+.about-eshop p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.about-brand strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.about-eshop .cta-button {
+    margin-top: 1rem;
+}
+
 /* Products Section */
 .products-grid {
     display: grid;
@@ -176,39 +243,64 @@ section {
     background-color: var(--bg-light);
 }
 
-.contact-content {
-    max-width: 600px;
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.contact-info {
-    display: grid;
-    gap: 2rem;
+.contact-section {
+    background-color: var(--bg-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
 }
 
-.contact-item {
-    text-align: center;
-}
-
-.contact-item strong {
-    display: block;
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
+.contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
     color: var(--text-primary);
 }
 
-.contact-item p {
-    font-size: 1rem;
+.contact-info {
     color: var(--text-secondary);
+    line-height: 1.8;
 }
 
-.contact-item a {
+.contact-info p {
+    margin-bottom: 0.75rem;
+}
+
+.contact-info strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.contact-info a {
     color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.contact-item a:hover {
+.contact-info a:hover {
     color: var(--primary-dark);
     text-decoration: underline;
 }
@@ -255,6 +347,15 @@ section {
 
     .hero-description {
         font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-brand {
+        text-align: center;
     }
 
     .section-title {
@@ -262,6 +363,10 @@ section {
     }
 
     .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
         grid-template-columns: 1fr;
     }
 
