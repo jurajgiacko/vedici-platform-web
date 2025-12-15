@@ -35,6 +35,6 @@ Pre aktiváciu GitHub Pages:
 ## Kontakt
 
 - **E-shop:** [vedici.gg](https://vedici.gg)
-- **E-mail:** eshop@vedici-platform.com
+- **E-mail:** support@vedici.gg
 - **Adresa:** Tomáše Bati 385, Louky, 763 02, Zlín
 
